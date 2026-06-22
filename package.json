@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -H 0.0.0.0 -p ${PORT:-3000}"
+    "migrate": "node scripts/migrate.mjs",
+    "start": "npm run migrate && next start -H 0.0.0.0 -p ${PORT:-3000}"
   },
   "dependencies": {
     "next": "^14.2.0",
