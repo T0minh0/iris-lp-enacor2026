@@ -1,0 +1,8 @@
+# Configuração Nixpacks para o Coolify.
+# Fixa o Node 20 (LTS) para previsibilidade; install e build são detectados
+# automaticamente a partir do package.json. O start sobe o servidor Node.
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[start]
+cmd = "npm run start"

@@ -1,0 +1,17 @@
+# dependências
+/node_modules
+
+# build do Next.js
+/.next
+/out
+
+# variáveis de ambiente (NÃO commitar segredos)
+.env
+.env.local
+.env*.local
+
+# logs / SO
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
